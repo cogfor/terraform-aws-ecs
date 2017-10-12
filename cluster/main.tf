@@ -50,7 +50,7 @@ data "aws_ami" "ecs_ami" {
 }
 
 module "cluster" {
-  source = "github.com/unifio/terraform-aws-asg?ref=v0.3.1//group"
+  source = "github.com/cogfor/terraform-aws-asg?ref=v0.3.1//group"
 
   # Resource tags
   stack_item_fullname = "${var.stack_item_fullname}"
