@@ -121,7 +121,7 @@ resource "aws_ecs_cluster" "cluster" {
 
 ## Enables Consul service discovery
 module "consul" {
-  source = "../consul"
+  source = "github.com/cogfor/terraform-aws-ecs.git//consul?ref=master"
 
   # Resource tags
   stack_item_fullname = "${var.stack_item_fullname}"
